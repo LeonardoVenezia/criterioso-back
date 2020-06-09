@@ -45,7 +45,7 @@ mongoose.connect(DB_URI || mongoUri.uri)
 .then(()=> console.log("Mongo está conectado!!!!"))
 .catch(err=> console.log(err))
 
-app.use('/', express.static('Criterio/public'));
+// app.use('/', express.static('Criterio/public'));
 
 app.get('/love', (req, res) => {
     res.send('Hi Love');
